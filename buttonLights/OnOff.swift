@@ -41,19 +41,13 @@ class ColorChange {
     enum Light {
         case on
         case off
-        func onOffSwitch (_ lightButton: UIButton) {
-            switch self {
-            case .on: lightButton.tintColor = UIColor.yellow
-            case .off: lightButton.tintColor = UIColor.blue
-                
-            }
-        }
+        
     }
-    func lightOn (_ button: UIButton, onOrOff: String) {
+    func lightOn (_ button: UIButton, onOrOff: Light) {
         switch onOrOff {
-        case "on":  Light.on.onOffSwitch(button)
-        case "off":  Light.off.onOffSwitch(button)
-        default: "Not a valid argument"
+        case .on:  button.backgroundColor = .yellow
+        case .off:  button.backgroundColor = .blue
+       
         }
     }
 }

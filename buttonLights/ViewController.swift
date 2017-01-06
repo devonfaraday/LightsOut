@@ -137,10 +137,11 @@ class ViewController: UIViewController {
         record.text = "\(recordsDictionary["level2"])"
         
     }
-        override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func button11(_ sender: UIButton) {
+        colorChange.lightOn(b11, onOrOff: .on)
     }
+    
+    
 
 
 }
