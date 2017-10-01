@@ -11,10 +11,14 @@
 		AA32AB441CDD9D8D00CD23F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32AB431CDD9D8D00CD23F9 /* ViewController.swift */; };
 		AA32AB471CDD9D8D00CD23F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32AB451CDD9D8D00CD23F9 /* Main.storyboard */; };
 		AA32AB491CDD9D8D00CD23F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA32AB481CDD9D8D00CD23F9 /* Assets.xcassets */; };
-		AA32AB4C1CDD9D8D00CD23F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32AB4A1CDD9D8D00CD23F9 /* LaunchScreen.storyboard */; };
 		AA32AB571CDD9D8D00CD23F9 /* buttonLightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32AB561CDD9D8D00CD23F9 /* buttonLightsTests.swift */; };
 		AA32AB621CDD9D8D00CD23F9 /* buttonLightsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32AB611CDD9D8D00CD23F9 /* buttonLightsUITests.swift */; };
 		AA32AB701CDDC1DB00CD23F9 /* OnOff.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32AB6F1CDDC1DB00CD23F9 /* OnOff.swift */; };
+		FD2933831F815A1900736498 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2933821F815A1900736498 /* Light.swift */; };
+		FD2933881F815B2500736498 /* LightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2933871F815B2500736498 /* LightController.swift */; };
+		FD466A9B1F817EE500E54A27 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD466A9A1F817EE500E54A27 /* Info.plist */; };
+		FD466A9D1F8186CB00E54A27 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466A9C1F8186CB00E54A27 /* Level.swift */; };
+		FD466A9F1F8186EA00E54A27 /* LevelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466A9E1F8186EA00E54A27 /* LevelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,6 @@
 		AA32AB431CDD9D8D00CD23F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA32AB461CDD9D8D00CD23F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA32AB481CDD9D8D00CD23F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA32AB4B1CDD9D8D00CD23F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AA32AB4D1CDD9D8D00CD23F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA32AB521CDD9D8D00CD23F9 /* buttonLightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buttonLightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA32AB561CDD9D8D00CD23F9 /* buttonLightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonLightsTests.swift; sourceTree = "<group>"; };
 		AA32AB581CDD9D8D00CD23F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,11 @@
 		AA32AB611CDD9D8D00CD23F9 /* buttonLightsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonLightsUITests.swift; sourceTree = "<group>"; };
 		AA32AB631CDD9D8D00CD23F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA32AB6F1CDDC1DB00CD23F9 /* OnOff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnOff.swift; sourceTree = "<group>"; };
+		FD2933821F815A1900736498 /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		FD2933871F815B2500736498 /* LightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightController.swift; sourceTree = "<group>"; };
+		FD466A9A1F817EE500E54A27 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = buttonLights/Info.plist; sourceTree = "<group>"; };
+		FD466A9C1F8186CB00E54A27 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		FD466A9E1F8186EA00E54A27 /* LevelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 		AA32AB351CDD9D8D00CD23F9 = {
 			isa = PBXGroup;
 			children = (
+				FD466A9A1F817EE500E54A27 /* Info.plist */,
 				AA32AB401CDD9D8D00CD23F9 /* buttonLights */,
 				AA32AB551CDD9D8D00CD23F9 /* buttonLightsTests */,
 				AA32AB601CDD9D8D00CD23F9 /* buttonLightsUITests */,
@@ -99,13 +107,11 @@
 		AA32AB401CDD9D8D00CD23F9 /* buttonLights */ = {
 			isa = PBXGroup;
 			children = (
-				AA32AB411CDD9D8D00CD23F9 /* AppDelegate.swift */,
-				AA32AB431CDD9D8D00CD23F9 /* ViewController.swift */,
-				AA32AB451CDD9D8D00CD23F9 /* Main.storyboard */,
-				AA32AB6F1CDDC1DB00CD23F9 /* OnOff.swift */,
-				AA32AB481CDD9D8D00CD23F9 /* Assets.xcassets */,
-				AA32AB4A1CDD9D8D00CD23F9 /* LaunchScreen.storyboard */,
-				AA32AB4D1CDD9D8D00CD23F9 /* Info.plist */,
+				FD29338C1F815B8200736498 /* Storyboards */,
+				FD2933841F815AEF00736498 /* Model */,
+				FD2933851F815AF400736498 /* ModelController */,
+				FD2933861F815B0D00736498 /* ViewControllers */,
+				FD2933891F815B4300736498 /* Resources */,
 			);
 			path = buttonLights;
 			sourceTree = "<group>";
@@ -126,6 +132,58 @@
 				AA32AB631CDD9D8D00CD23F9 /* Info.plist */,
 			);
 			path = buttonLightsUITests;
+			sourceTree = "<group>";
+		};
+		FD2933841F815AEF00736498 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD2933821F815A1900736498 /* Light.swift */,
+				FD466A9C1F8186CB00E54A27 /* Level.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD2933851F815AF400736498 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				FD2933871F815B2500736498 /* LightController.swift */,
+				FD466A9E1F8186EA00E54A27 /* LevelController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		FD2933861F815B0D00736498 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA32AB431CDD9D8D00CD23F9 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD2933891F815B4300736498 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD29338B1F815B6900736498 /* Helpers */,
+				AA32AB481CDD9D8D00CD23F9 /* Assets.xcassets */,
+				AA32AB411CDD9D8D00CD23F9 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD29338B1F815B6900736498 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA32AB6F1CDDC1DB00CD23F9 /* OnOff.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD29338C1F815B8200736498 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AA32AB451CDD9D8D00CD23F9 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA32AB4C1CDD9D8D00CD23F9 /* LaunchScreen.storyboard in Resources */,
 				AA32AB491CDD9D8D00CD23F9 /* Assets.xcassets in Resources */,
 				AA32AB471CDD9D8D00CD23F9 /* Main.storyboard in Resources */,
+				FD466A9B1F817EE500E54A27 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD466A9D1F8186CB00E54A27 /* Level.swift in Sources */,
 				AA32AB441CDD9D8D00CD23F9 /* ViewController.swift in Sources */,
+				FD2933881F815B2500736498 /* LightController.swift in Sources */,
+				FD466A9F1F8186EA00E54A27 /* LevelController.swift in Sources */,
 				AA32AB421CDD9D8D00CD23F9 /* AppDelegate.swift in Sources */,
+				FD2933831F815A1900736498 /* Light.swift in Sources */,
 				AA32AB701CDDC1DB00CD23F9 /* OnOff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +369,6 @@
 				AA32AB461CDD9D8D00CD23F9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA32AB4A1CDD9D8D00CD23F9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA32AB4B1CDD9D8D00CD23F9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5PE67HY7D9;
 				INFOPLIST_FILE = buttonLights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cms.buttonLights;
@@ -429,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5PE67HY7D9;
 				INFOPLIST_FILE = buttonLights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cms.buttonLights;
