@@ -11,8 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var moves: UILabel!
     @IBOutlet weak var record: UILabel!
-//    let colorChange = ColorChange()
-    //the 2 digit number represent column and row.  so button b11 is column 1 row 1
     
     //First Column of lights
     @IBOutlet weak var b11: UIButton!
@@ -49,10 +47,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var b54: UIButton!
     @IBOutlet weak var b55: UIButton!
     
-    let yellow = UIColor.yellow
-    let blue = UIColor.blue
+ 
     var moved = 0
     var records = 0
+    var levelLights = [UIButton]()
     var recordsDictionary: [String: Int] = [:]
     var buttonArray: [UIButton] = []
     let lightController = LightController()
@@ -60,8 +58,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonArray = [b11, b12, b13, b14, b15, b21, b22, b23, b24, b25, b31, b32, b33, b34, b35, b41, b42, b43, b44, b45, b51, b52, b53, b54, b55]
+        buttonArray = [b11, b21, b31, b41, b51, b12, b22, b32, b42, b52, b13, b23, b33, b43, b53, b14, b24, b34, b44, b54, b15, b25, b35, b45, b55]
         lightController.createLights(buttons: buttonArray)
+        clearBackground()
         moved = 0
         records = 0
         moves.text = "\(moved)"
@@ -90,14 +89,6 @@ class ViewController: UIViewController {
 //        }
 //    }
 
-    @IBAction func level1(_ sender: Any) {
-        
-    }
-
-    @IBAction func level2(_ sender: Any) {
-        
-        
-    }
     @IBAction func lightButtonPressedDown(_ sender: UIButton) {
         if sender.currentImage == #imageLiteral(resourceName: "LightOn") {
             sender.setImage(#imageLiteral(resourceName: "LightOnPressed"), for: .normal)
@@ -116,5 +107,13 @@ class ViewController: UIViewController {
         lightController.lightPressed()
         incrementMoves()
     }
+    
+    // MARK: - Helpers
+    func clearBackground() {
+        for button in buttonArray {
+            button.backgroundColor = .clear
+        }
+    }
+    
 }
 
